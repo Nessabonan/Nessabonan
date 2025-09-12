@@ -1,11 +1,12 @@
-/* Definindo as variáveis de cor para um uso mais fácil e consistente */
+//* Definindo as variáveis de cor com tons de azul */
 :root {
-    --primary-color: #5D5D5D; /* Cinza escuro para títulos */
-    --secondary-color: #8C8C8C; /* Cinza médio para textos */
-    --accent-color: #D3D3D3; /* Cinza claro para detalhes e fundos */
-    --background-color: #F5F5F5; /* Cinza muito claro, quase branco */
-    --card-background: #EAEAEA; /* Cinza para os cards */
-    --hover-color: #7A7A7A; /* Cor para links e botões ao passar o mouse */
+    --primary-color: #003366; /* Azul marinho para títulos e detalhes */
+    --secondary-color: #336699; /* Azul mais claro para o texto */
+    --accent-color: #4C82C2; /* Um azul vibrante para botões e links */
+    --background-color: #F8F8FF; /* Branco suave para o fundo */
+    --card-background: #ffffff; /* Fundo dos cards (branco) */
+    --hover-color: #6699CC; /* Azul para links e botões ao passar o mouse */
+    --section-bg-color: #E6F2FF; /* Azul muito claro para seções de destaque */
 }
 
 /* Estilos globais: reset, fonte e cor de fundo */
@@ -20,10 +21,9 @@ body {
     font-weight: 300;
     background-color: var(--background-color);
     color: var(--secondary-color);
-    line-height: 1.6; /* Espaçamento entre linhas para maior legibilidade */
+    line-height: 1.6;
 }
 
-/* Utilidade para centralizar o conteúdo */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -32,22 +32,21 @@ body {
 
 /* Estilo do cabeçalho */
 .header {
-    background-color: #ffffff; /* Fundo branco para o cabeçalho */
+    background-color: var(--primary-color);
+    color: #ffffff;
     padding: 60px 0;
     text-align: center;
-    border-bottom: 1px solid var(--accent-color);
 }
 
 .header h1 {
     font-size: 3rem;
-    color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .header p {
     font-size: 1.2rem;
-    color: var(--secondary-color);
+    color: #E6E6FA; /* Um tom de branco para o subtítulo */
 }
 
 /* Estilo das seções */
@@ -55,12 +54,17 @@ body {
     padding: 80px 0;
 }
 
-.intro-section, .enem-section {
-    background-color: #ffffff;
+.intro-section, .universities-section {
+    background-color: var(--background-color);
 }
 
-.universities-section {
-    background-color: var(--card-background);
+.blue-bg {
+    background-color: var(--section-bg-color);
+    color: var(--primary-color);
+}
+
+.blue-bg h2, .blue-bg p {
+    color: var(--primary-color);
 }
 
 h2 {
@@ -77,7 +81,6 @@ p {
     text-align: justify;
 }
 
-/* Estilo para as imagens das seções */
 .section-image {
     width: 100%;
     max-width: 600px;
@@ -96,17 +99,19 @@ p {
 }
 
 .university-card {
-    background-color: #ffffff;
+    background-color: var(--card-background);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 300px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid var(--accent-color);
 }
 
 .university-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .card-image {
@@ -133,7 +138,7 @@ p {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
