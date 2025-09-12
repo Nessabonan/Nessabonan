@@ -1,4 +1,4 @@
-//* Definindo as variáveis de cor com tons de azul */
+/* Definindo as variáveis de cor com tons de azul */
 :root {
     --primary-color: #003366; /* Azul marinho para títulos e detalhes */
     --secondary-color: #336699; /* Azul mais claro para o texto */
@@ -176,5 +176,7 @@ p {
     .university-list {
         flex-direction: column;
         align-items: center;
+    }
+}
     }
 }
