@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,69 +10,288 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="header">
         <div class="container">
-            <h1>Psicologia no Paraná</h1>
-            <p>Um guia completo para sua jornada na área.</p>
+            <div class="logo-menu">
+                <h1 class="site-title">Psicologia no Paraná</h1>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#universidades">Universidades</a></li>
+                        <li><a href="#ingresso">Métodos de Ingresso</a></li>
+                        <li><a href="#cursos-particulares">Cursos Particulares</a></li>
+                        <li><a href="#notas-corte">Notas de Corte</a></li>
+                        <li><a href="#emprego">Oportunidades</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main class="main-content">
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Sua jornada na Psicologia começa aqui</h2>
+                <p>Encontre todas as informações necessárias para ingressar na carreira de psicologia no Paraná</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content" id="inicio">
         <section class="intro-section">
             <div class="container">
-                <img src="placeholder-intro.jpg" alt="Imagem que representa a psicologia, como um cérebro ou pessoas em conversa." class="section-image">
                 <h2>O Curso de Psicologia</h2>
-                <p>Aqui você pode escrever sobre o que é o curso de Psicologia, sua grade curricular, as áreas de atuação e a importância da profissão na sociedade moderna. Fale sobre o que um estudante de Psicologia aprende e as competências que desenvolve ao longo da graduação.</p>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>O curso de Psicologia forma profissionais capazes de analisar e interpretar sentimentos, emoções e comportamentos humanos. Com duração média de 5 anos, o currículo combina disciplinas teóricas e práticas, preparando os estudantes para atuar em diversas áreas como clínica, organizacional, educacional, social e hospitalar.</p>
+                        <p>O psicólogo estuda os fenômenos psíquicos e de comportamento do ser humano por meio da análise de suas emoções, suas ideias e seus valores. Diagnosticar, prevenir e tratar doenças mentais, distúrbios emocionais e de personalidade são algumas das atividades deste profissional.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="https://placehold.co/600x400/ffd6cc/000000?text=Psicologia+Paraná" alt="Estudantes de psicologia em atividade prática" class="section-image">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="universities-section">
+        <section class="universities-section" id="universidades">
             <div class="container">
                 <h2>Universidades Públicas e Federais no Paraná</h2>
                 <p>O Paraná conta com excelentes instituições de ensino. Abaixo, listamos algumas das principais universidades públicas e federais que ofertam o curso de Psicologia, para te ajudar a escolher a ideal para o seu futuro.</p>
                 
                 <div class="university-list">
                     <article class="university-card">
-                        <img src="placeholder-ufpr.jpg" alt="Fachada da UFPR." class="card-image">
+                        <img src="https://placehold.co/400x300/e0f0ff/000000?text=UFPR" alt="Fachada da UFPR." class="card-image">
                         <h3>Universidade Federal do Paraná (UFPR)</h3>
-                        <p>Fale sobre a UFPR, sua tradição, a qualidade do curso e onde ele se localiza. Você pode adicionar informações sobre a estrutura do campus e projetos de pesquisa.</p>
+                        <p>A UFPR oferece um dos cursos de Psicologia mais tradicionais do país, com conceito 5 no MEC. O curso está disponível em Curitiba e possui infraestrutura completa com laboratórios de pesquisa e clínicas-escola.</p>
                         <a href="#" class="btn">Saiba mais</a>
                     </article>
                     
                     <article class="university-card">
-                        <img src="placeholder-uel.jpg" alt="Fachada da UEL." class="card-image">
+                        <img src="https://placehold.co/400x300/e0f0ff/000000?text=UEL" alt="Fachada da UEL." class="card-image">
                         <h3>Universidade Estadual de Londrina (UEL)</h3>
-                        <p>Descreva o curso de Psicologia na UEL, destacando seus diferenciais, a cidade de Londrina e as possibilidades que a universidade oferece aos alunos.</p>
+                        <p>A UEL oferece um curso de Psicologia com excelente avaliação do MEC (conceito 4). Localizada em Londrina, a universidade possui ampla estrutura e programas de extensão que beneficiam a comunidade.</p>
                         <a href="#" class="btn">Saiba mais</a>
                     </article>
 
                     <article class="university-card">
-                        <img src="placeholder-uem.jpg" alt="Fachada da UEM." class="card-image">
+                        <img src="https://placehold.co/400x300/e0f0ff/000000?text=UEM" alt="Fachada da UEM." class="card-image">
                         <h3>Universidade Estadual de Maringá (UEM)</h3>
-                        <p>Apresente a UEM, sua reputação e o curso de Psicologia oferecido, mencionando a cidade de Maringá e sua relevância acadêmica.</p>
+                        <p>A UEM em Maringá oferece um curso de Psicologia reconhecido nacionalmente, com conceito 4 no MEC. O programa destaca-se pela integração entre teoria e prática e pelo enfoque na pesquisa.</p>
+                        <a href="#" class="btn">Saiba mais</a>
+                    </article>
+
+                    <article class="university-card">
+                        <img src="https://placehold.co/400x300/e0f0ff/000000?text=UNIOESTE" alt="Fachada da UNIOESTE." class="card-image">
+                        <h3>Universidade Estadual do Oeste do Paraná (UNIOESTE)</h3>
+                        <p>A UNIOESTE oferece o curso de Psicologia em seus campi de Cascavel e Foz do Iguaçu, com conceito 4 no MEC. A universidade se destaca pelo compromisso social e pela formação crítica de seus estudantes.</p>
                         <a href="#" class="btn">Saiba mais</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="enem-section blue-bg">
+        <section class="ingress-section" id="ingresso">
             <div class="container">
-                <h2>Métodos de Ingresso: ENEM e Sisu</h2>
-                <p>A principal forma de acesso às universidades públicas no Brasil é através do Sistema de Seleção Unificada (Sisu), que utiliza a nota do Exame Nacional do Ensino Médio (ENEM). Explique o processo, como funciona a inscrição e os períodos de seleção.</p>
-                <img src="placeholder-sisu.jpg" alt="Imagem que representa o ENEM e o Sisu." class="section-image">
-                <p><strong>Nota de Corte:</strong> Fale sobre o que é a nota de corte, como ela varia a cada ano e a importância de acompanhar as médias para o curso de Psicologia nas universidades do Paraná. Você pode mencionar que as notas são apenas uma referência e não uma garantia.</p>
+                <h2>Métodos de Ingresso nas Universidades Públicas</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>O acesso às universidades públicas do Paraná ocorre principalmente através do Sistema de Seleção Unificada (Sisu), que utiliza as notas do Exame Nacional do Ensino Médio (ENEM).</p>
+                        
+                        <h3>Processo de Ingresso via Sisu</h3>
+                        <ul>
+                            <li>Realize a prova do ENEM</li>
+                            <li>Aguarde a divulgação dos resultados</li>
+                            <li>Inscreva-se no Sisu durante o período de inscrições</li>
+                            <li>Selecione até duas opções de curso</li>
+                            <li>Acompanhe as notas de corte parciais</li>
+                            <li>Confirme sua matrícula se for aprovado</li>
+                        </ul>
+                        
+                        <p>Algumas universidades também possuem vestibulares próprios ou sistemas mistos de seleção. É importante verificar no site de cada instituição os editais vigentes.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="https://placehold.co/600x400/fff2cc/000000?text=Métodos+de+Ingresso" alt="Imagem que representa o ENEM e o Sisu." class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="private-courses-section" id="cursos-particulares">
+            <div class="container">
+                <h2>Cursos Particulares de Psicologia no Paraná</h2>
+                <p>Além das universidades públicas, o Paraná conta com diversas instituições particulares de qualidade que oferecem o curso de Psicologia. Confira abaixo algumas opções e seus valores médios:</p>
+                
+                <div class="courses-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Instituição</th>
+                                <th>Cidade</th>
+                                <th>Mensalidade</th>
+                                <th>Nota MEC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PUC-PR</td>
+                                <td>Curitiba</td>
+                                <td>R$ 2.100,00</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Unibrasil</td>
+                                <td>Curitiba</td>
+                                <td>R$ 1.400,00</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Unopar</td>
+                                <td>Londrina</td>
+                                <td>R$ 900,00</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Unicesumar</td>
+                                <td>Maringá</td>
+                                <td>R$ 1.100,00</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>União Pioneira de Integração</td>
+                                <td>Francisco Beltrão</td>
+                                <td>R$ 850,00</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="note">*Valores referentes a 2024 e sujeitos a alteração. Consulte sempre o site das instituições para informações atualizadas.</p>
+            </div>
+        </section>
+
+        <section class="cutting-score-section" id="notas-corte">
+            <div class="container">
+                <h2>Notas de Corte para Psicologia</h2>
+                <p>As notas de corte representam a menor nota necessária para ser aprovado em determinado curso através do Sisu. Estas notas variam a cada edição conforme a demanda e o desempenho dos candidatos.</p>
+                
+                <div class="score-cards">
+                    <div class="score-card">
+                        <h3>UFPR</h3>
+                        <div class="score-value">728</div>
+                        <p>Nota de corte mais recente</p>
+                    </div>
+                    <div class="score-card">
+                        <h3>UEL</h3>
+                        <div class="score-value">702</div>
+                        <p>Nota de corte mais recente</p>
+                    </div>
+                    <div class="score-card">
+                        <h3>UEM</h3>
+                        <div class="score-value">695</div>
+                        <p>Nota de corte mais recente</p>
+                    </div>
+                    <div class="score-card">
+                        <h3>UNIOESTE</h3>
+                        <div class="score-value">681</div>
+                        <p>Nota de corte mais recente</p>
+                    </div>
+                </div>
+                
+                <p class="note">As notas de corte são referenciais e podem variar significativamente entre diferentes edições do Sisu. É recomendável acompanhar as notas parciais durante o período de inscrição.</p>
+            </div>
+        </section>
+
+        <section class="employment-section" id="emprego">
+            <div class="container">
+                <h2>Oportunidades de Emprego para Psicólogos no Paraná</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>O mercado de trabalho para psicólogos no Paraná é diversificado e oferece oportunidades em várias áreas de atuação. Confira as principais:</p>
+                        
+                        <h3>Áreas de Atuação</h3>
+                        <ul>
+                            <li><strong>Psicologia Clínica:</strong> Atendimento em consultórios, clínicas e hospitais</li>
+                            <li><strong>Psicologia Organizacional:</strong> Recursos humanos, treinamento e desenvolvimento</li>
+                            <li><strong>Psicologia Educacional:</strong> Instituições de ensino, orientação educacional</li>
+                            <li><strong>Psicologia Social:</strong> Programas sociais, ONGs, políticas públicas</li>
+                            <li><strong>Psicologia Hospitalar:</strong> Atendimento a pacientes em ambiente hospitalar</li>
+                            <li><strong>Psicologia do Trânsito:</strong> Avaliação psicológica para motoristas</li>
+                        </ul>
+                        
+                        <h3>Média Salarial</h3>
+                        <p>A remuneração varia conforme a experiência e área de atuação:</p>
+                        <ul>
+                            <li>Iniciante: R$ 2.500 - R$ 3.500</li>
+                            <li>Experiente: R$ 4.000 - R$ 6.000</li>
+                            <li>Especialista: R$ 7.000+</li>
+                        </ul>
+                    </div>
+                    <div class="image-content">
+                        <img src="https://placehold.co/600x400/d9ead3/000000?text=Oportunidades+de+Emprego" alt="Profissional de psicologia em ambiente de trabalho" class="section-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="additional-info-section">
+            <div class="container">
+                <h2>Informações Adicionais</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>Duração do Curso</h3>
+                        <p>O curso de Psicologia tem duração média de 5 anos (10 semestres), incluindo estágio supervisionado e trabalho de conclusão de curso.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Registro Profissional</h3>
+                        <p>Para exercer a profissão, é necessário obter o registro no Conselho Regional de Psicologia (CRP) após a conclusão do curso.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Pós-Graduação</h3>
+                        <p>Existem diversas opções de especialização, mestrado e doutorado em Psicologia nas universidades paranaenses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <h2>Conheça o Mundo da Psicologia</h2>
+                <div class="gallery">
+                    <img src="https://placehold.co/600x400/ffe6cc/000000?text=Atendimento+Psicológico" alt="Profissional realizando atendimento psicológico">
+                    <img src="https://placehold.co/600x400/d9d2e9/000000?text=Laboratório+de+Psicologia" alt="Laboratório de psicologia com equipamentos modernos">
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Guia de Psicologia no Paraná. Todos os direitos reservados.</p>
-            <p>Criado por [Seu Nome].</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Psicologia no Paraná</h3>
+                    <p>Seu guia completo para ingressar na carreira de psicologia no estado do Paraná.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: contato@psicologianoparana.com.br</p>
+                    <p>Telefone: (41) 3333-3333</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Sisu</a></li>
+                        <li><a href="#">ENEM</a></li>
+                        <li><a href="#">CRP-PR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Psicologia no Paraná. Todos os direitos reservados.</p>
+                <p>Criado por [Seu Nome].</p>
+            </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
